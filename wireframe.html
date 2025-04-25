@@ -273,6 +273,51 @@
             background: #eee;
         }
     </style>
+    <style>
+    @media (max-width: 640px) {
+        .navbar {
+            flex-direction: column;
+            align-items: flex-start;
+        }
+        .nav-links {
+            margin-top: 0.5rem;
+            gap: 1rem;
+            flex-wrap: wrap;
+        }
+        section {
+            padding: 3rem 1rem;
+        }
+        .hero-content {
+            padding: 1rem;
+        }
+        .hero h1 {
+            font-size: 2.5rem;
+        }
+        .hero p {
+            font-size: 1rem;
+        }
+        .features-grid,
+        .testimonials-grid {
+            grid-template-columns: 1fr;
+        }
+        .use-case-card {
+            display: flex;
+            flex-direction: column;
+        }
+        .founder-story {
+            display: block;
+        }
+        .founder-image {
+            width: 100%;
+            height: auto;
+            max-height: 300px;
+            margin-bottom: 1.5rem;
+        }
+        .specs-image-container {
+            height: 300px;
+        }
+    }
+    </style>
 </head>
 <body>
     <!-- Navigation -->
