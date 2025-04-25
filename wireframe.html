@@ -304,6 +304,26 @@
             height: auto;
             display: block;
         }
+
+        /* 桌面端背景容器保持比例，不裁剪 */
+        @media (min-width: 641px) {
+            .image-placeholder,
+            .use-case-image,
+            .founder-image,
+            .testimonial-avatar,
+            .feature-icon {
+                background-size: contain;
+                background-position: center center;
+                background-repeat: no-repeat;
+            }
+            .use-case-image,
+            .founder-image,
+            .specs-image-container {
+                width: 100%;
+                height: auto;
+                aspect-ratio: 16/9;
+            }
+        }
     </style>
     <style>
     @media (max-width: 640px) {
@@ -347,6 +367,64 @@
         }
         .specs-image-container {
             height: 300px;
+        }
+        /* 移动端显示全图不裁剪 */
+        .image-placeholder,
+        .use-case-image,
+        .founder-image,
+        .testimonial-avatar,
+        .feature-icon {
+            background-size: contain;
+            background-position: center center;
+        }
+        /* 新增移动端全面优化 */
+        .navbar {
+            padding: 0.75rem 1rem;
+        }
+        .navbar .logo {
+            font-size: 1.25rem;
+        }
+        .nav-links {
+            gap: 0.75rem;
+        }
+        .hero {
+            min-height: auto;
+            height: auto;
+            padding-top: 5rem;
+        }
+        .button {
+            padding: 0.75rem 1.5rem;
+            font-size: 1rem;
+        }
+        .section-title {
+            font-size: 1.5rem;
+            margin-bottom: 2rem;
+        }
+        .section-subtitle {
+            font-size: 1rem;
+            margin-bottom: 1.5rem;
+        }
+        .feature-card,
+        .testimonial-card,
+        .use-case-card {
+            padding: 1rem;
+        }
+        .feature-title {
+            font-size: 1rem;
+        }
+        .feature-description,
+        .testimonial-card p {
+            font-size: 0.9rem;
+        }
+        .timeline {
+            padding-left: 1rem;
+        }
+        .timeline-item {
+            padding-left: 1rem;
+            margin-bottom: 1.5rem;
+        }
+        .final-cta {
+            padding: 3rem 1rem;
         }
     }
     </style>
